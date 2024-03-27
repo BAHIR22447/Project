@@ -1,0 +1,42 @@
+.button_1 {
+  padding: 1.5vh 2.5vw;
+}
+
+.button_2 {
+  padding: 1.5vh 2.5vw;
+  color: black;
+  background-color: rgb(37, 30, 30);
+}
+
+.button_2:hover{
+  background-color: rgb(17, 16, 16);
+}
+
+.button_3{
+  padding: 1.5vh 2.5vw;
+}
+
+/* Media Query for Phones */  
+@media only screen and (max-width: 720px) {
+  .button_1 {
+    font-size: 5px;
+    padding: 3px 8px;
+  }
+
+  .button_2 {
+    font-size: 8px;
+    padding: 5px 12.5px;
+  }
+
+  .button_3{
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .button_1 {
+    font-size: 10px;
+    padding: 8px 14px;
+  }
+}

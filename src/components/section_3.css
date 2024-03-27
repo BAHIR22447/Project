@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section_3 {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100vh;
+  padding-top: 5%;
+}
+
+.container_1 {
+  width: 79vw;
+  display: flex;
+  flex-flow: column;
+  background-image: url("../assets/dots.png");
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: 26%;
+  background-size: 18%;
+}
+
+.image {
+  width: 79vw;
+}
+
+.upper_div_section_3 {
+  width: 79vw;
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.upper_div_image_right {
+  width: 40%;
+}
+
+.upper_div_text_left {
+  width: 60%;
+}
+
+.upper_div_section_3 p,
+h2 {
+  color: white;
+}
+
+.upper_div_section_3 p {
+  font-size: clamp(12px, 1.2vw, 24px);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  .section_3 {
+    height: 40vh;
+    padding-top: 0%;
+  }
+
+  .upper_div_text_left h2{
+    font-size: 12px;
+  }
+
+  .upper_div_text_left p{
+    font-size: 5px;
+  }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .section_3{
+    height: 600px;
+    padding-top: 5%;
+  }
+}

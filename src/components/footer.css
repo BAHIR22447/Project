@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  height: 60vh;
+}
+
+.container_footer {
+  width: 100%;
+  height: 50vh;
+  padding: 4% 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: white 1px solid;
+}
+
+.div_1 {
+  width: 22vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.div_1 img {
+  position: relative;
+  right: 12.5%;
+}
+
+#p_1_footer {
+  color: white;
+  padding-top: 5%;
+}
+
+.div_1 p {
+  color: white;
+}
+
+.Logo_image {
+  width: 10vw;
+}
+
+.div_2 {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  height: 28vh;
+  width: 8vw;
+  justify-content: space-between;
+  color: white;
+}
+
+.div_2 a {
+  text-decoration: none;
+  color: white;
+  padding: 1%;
+}
+
+.div_3 {
+  color: white;
+  width: 20vw;
+  height: 28vh;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.linked_in {
+  background-color: white;
+  padding: 2.5% 5%;
+  border-radius: 50%;
+  margin: 1%;
+}
+
+.div_4 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 15vw;
+  height: 20vh;
+  align-items: end;
+}
+
+.div_4 a {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.div_4 a:hover {
+  color: #fa9021;
+}
+
+.div_2 a {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.div_2 a:hover{
+  color: #fa9021;
+}
+
+
+.copyright {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8vw;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    height: 30vh;
+  }
+
+  .div_2 {
+    display: none;
+  }
+  .div_3 {
+    display: none;
+  }
+
+  .container_footer {
+    justify-content: center;
+    height: 30vh;
+  }
+
+  .div_1 {
+    width: 35vw;
+    height: 10vh;
+  }
+
+  .div_4 {
+    width: 35vw;
+    height: 10vh;
+    flex-wrap: wrap;
+  }
+
+  .div_1 p {
+    font-size: 8px;
+  }
+}

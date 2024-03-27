@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section_4 {
+  width: 100%;
+  height: 120vh;
+  background-image: url(../assets/background_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.back_drop_filter {
+  width: 100%;
+  height: 120vh;
+  backdrop-filter: brightness(0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.section_4_container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.upper_div_section_4 h3 {
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+
+.upper_div_section_4 p {
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+
+.upper_div_section_4 {
+  width: 60%;
+  padding-top: 8%;
+}
+
+.lower_div_section_4_item_icon {
+  background-color: white;
+  width: 62.5px;
+  height: 62.5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon_container_section_4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower_div_section_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6%;
+  text-align: center;
+}
+
+.lower_div_section_4_item_title {
+  color: white;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 1rem;
+}
+
+.button_links {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.button_links:hover {
+  scale: 110%;
+}
+
+.lower_div_section_4_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+  width: 15vw;
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  .section_4{
+    height: 450px;
+  }
+
+  .upper_div_section_4 h3 {
+    font-size: 8px;
+  }
+
+  .upper_div_section_4 p {
+    font-size: 5px;
+  } 
+
+
+  .lower_div_section_4_item_icon{
+    width: 31px;
+    height: 31px;
+  }
+
+
+  .icons_section_4{
+    width: 15px;
+  }
+
+
+  .lower_div_section_4_item_title{
+    font-size: 0.5rem;
+  }
+
+
+  .back_drop_filter{
+    height: 450px;
+  }
+
+  .lower_div_section_4{
+    gap: 3%;
+  }
+}
+
