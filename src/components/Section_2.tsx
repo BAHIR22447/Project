@@ -28,6 +28,7 @@ const Section_2: React.FC = () => {
     setSelectedGame(game);
     setIsOpen(!isOpen);
   };
+  //sdlkfj
 
   const followers_list: Game[] = [
     {
