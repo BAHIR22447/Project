@@ -1,8 +1,8 @@
 import React from "react";
-import "./notfound.css"; // Assuming you name your CSS file as '404NotFound.css'
+import "./coming_soon.css"; // Assuming you name your CSS file as '404NotFound.css'
 import { Link } from "react-router-dom";
 
-const NotFound404: React.FC = () => {
+const Comming_soon: React.FC = () => {
   return (
     <div className="not-found-container">
       <div className="moon"></div>
@@ -22,8 +22,9 @@ const NotFound404: React.FC = () => {
         <div className="error__description">
           It looks like one of the developers fell asleep
         </div>
-        <Link to="/" className="error__button error__button--active">GO TO HOMEPAGE</Link>
-
+        <Link to="/" className="error__button error__button--active">
+          GO TO HOMEPAGE
+        </Link>
       </div>
 
       <div className="astronaut">
@@ -57,6 +58,16 @@ const NotFound404: React.FC = () => {
   );
 };
 
-export default NotFound404;
+export default Comming_soon;
+
+
+
+
+
+
+
+
+
+
 
 

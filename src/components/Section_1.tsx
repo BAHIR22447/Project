@@ -69,6 +69,9 @@ const Section_1: React.FC = () => {
                 backgroundColor="black"
                 border="none"
                 button="button_2"
+                backgroundColorH="rgb(17, 16, 16)"
+                colorH="whtie"
+                transition="background-color 0.3s ease"
                 onClick={togglePanel}
               >
                 Close
@@ -78,7 +81,7 @@ const Section_1: React.FC = () => {
         </div>
       )}
 
-      <div onClick={isOpen ? togglePanel: undefined} className="container">
+      <div onClick={isOpen ? togglePanel : undefined} className="container">
         <div className="left_div">
           <div className="text_1">
             <h4>
@@ -101,6 +104,9 @@ const Section_1: React.FC = () => {
               backgroundColor=" rgb(250,131,5)"
               border="none"
               button="button_1"
+              backgroundColorH="rgb(95, 49, 0)"
+              colorH="whtie"
+              transition="background-color 0.3s ease"
               onClick={togglePanel}
             >
               Get more details

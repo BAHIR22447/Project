@@ -1,5 +1,4 @@
 import "./about.css"
-import Navbar from "./components/Navbar";
 
 const About = () => {
   return (

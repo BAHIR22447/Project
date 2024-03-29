@@ -13,6 +13,7 @@ import News from './News.js'
 import Contact_us from './Contact_us.tsx'
 import Layout from "./Layout.tsx";
 import NotFound from "./components/notfound.tsx";
+import Trending_games_page from "./components/trending_games_page.tsx";
 // import Navbar from "./components/Navbar.tsx";
 
   
@@ -60,6 +61,12 @@ import NotFound from "./components/notfound.tsx";
           path: "/contact",
           element: <Contact_us />,
         },
+        
+        {
+          path: "/trinding",
+          element: <Trending_games_page />,
+        },
+        
       ],
     },
 

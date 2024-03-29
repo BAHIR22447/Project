@@ -57,7 +57,10 @@ const Navbar = () => {
     <>
       <nav className="nav_bar">
         <div className="logo">
-          <img className="logo" src={Logo} alt="" />
+          <Link to="/">
+            {" "}
+            <img className="logo" src={Logo} alt="" />
+          </Link>
         </div>
 
         <ul className="nav_links">
@@ -87,13 +90,16 @@ const Navbar = () => {
               );
             } else if (item.isDeferint) {
               return (
-                <li className="nav-item" key={index}>
+                <li
+                  className="nav-item"
+                  key={index}
+                >
                   <Link
                     className={
                       item.isActive ? "contact_us active" : "contact_us"
                     }
                     to={item.linkTo}
-                    onClick={ () => handleClick(index) }
+                    onClick={() => handleClick(index)}
                   >
                     {item.title}
                   </Link>
@@ -110,11 +116,11 @@ const Navbar = () => {
         </div>
         <ul className="nav_links">
           {linkList.map((item, index) => {
-            if (!item.isArchived &&!item.isDeferint) {
+            if (!item.isArchived && !item.isDeferint) {
               return (
                 <li className="nav-item" key={index}>
                   <Link
-                    className={item.isActive? "links active" : "links"}
+                    className={item.isActive ? "links active" : "links"}
                     to={item.linkTo}
                     onClick={() => handleClick(index)}
                   >
@@ -127,7 +133,7 @@ const Navbar = () => {
                 <li className="nav-item" key={index}>
                   <Link
                     className={
-                      item.isActive? "contact_us active" : "contact_us"
+                      item.isActive ? "contact_us active" : "contact_us"
                     }
                     to={item.linkTo}
                     onClick={() => handleClick(index)}

@@ -6,6 +6,8 @@ import game_photo_1 from "../assets/Rectangle 23.png";
 import game_photo_2 from "../assets/Rectangle 24.png";
 import game_photo_3 from "../assets/Rectangle 25 (5).png";
 import game_photo_4 from "../assets/Rectangle 26.png";
+import { Link } from "react-router-dom";
+import "./button.css";
 
 interface Game {
   followersNumber: number;
@@ -28,7 +30,6 @@ const Section_2: React.FC = () => {
     setSelectedGame(game);
     setIsOpen(!isOpen);
   };
-  //sdlkfj
 
   const followers_list: Game[] = [
     {
@@ -89,36 +90,6 @@ const Section_2: React.FC = () => {
 
   return (
     <>
-      {allIsOpen && (
-        <div className="all_is_open_pannal">
-          <button
-            className="close-btn close_button_section_2"
-            onClick={() => setallIsOpen(false)}
-          >
-            <FaTimes />
-          </button>
-          <div className="top_games_list">
-            {followers_list.map((item, index) => (
-              <div key={index} className="section_2_card">
-                <img
-                  id={item.cssId || ""}
-                  className="games_table"
-                  style={item.style || {}}
-                  src={item.imgLink}
-                  alt=""
-                  onClick={() => togglePanel(item)}
-                />
-                <div className="card_text">
-                  <h4>
-                    {" "}
-                    <FaFire /> {item.followersNumber} Followers{" "}
-                  </h4>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
       {isOpen && (
         <div className="game_details_overlay" onClick={() => setIsOpen(false)}>
           <div className="game_details" onClick={(e) => e.stopPropagation()}>
@@ -146,15 +117,20 @@ const Section_2: React.FC = () => {
         <div className="container-1">
           <div className="text_button">
             <h2 className="upper_div_text">Currently Trending Games</h2>
-            <Button
-              className="upper_div_button button_2"
-              backgroundColor="rgb(37, 30, 30)"
-              color="white"
-              borderRadius="8px"
-              button="button_2"
-            >
-              SEE ALL
-            </Button>
+            <Link to="./trinding">
+              {" "}
+              <Button
+                className="upper_div_button button_2"
+                backgroundColor="rgb(37, 30, 30)"
+                color="white"
+                borderRadius="8px"
+                backgroundColorH=" rgb(17, 16, 16)"
+                colorH="whtie"
+                transition="background-color 0.3s ease"
+              >
+                SEE ALL
+              </Button>
+            </Link>
           </div>
           <div className="cards_container">
             {followers_list.map((item, index) => (

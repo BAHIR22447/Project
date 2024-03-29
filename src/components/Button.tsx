@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes, useState } from "react";
 import "./button.css";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -15,6 +15,9 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   fontFamily?: string;
   fontWeight?: string;
   button?: "button_1" | "button_2" | "button_3";
+  backgroundColorH?: string;
+  colorH?: string;
+  transition?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -32,11 +35,15 @@ const Button: React.FC<ButtonProps> = ({
   fontFamily,
   fontWeight,
   button,
+  backgroundColorH,
+  colorH,
+  transition,
   ...props
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   let className = "button";
 
-  // Apply variant class
   if (variant === "primary") {
     className += " button-primary";
   } else if (variant === "secondary") {
@@ -45,14 +52,12 @@ const Button: React.FC<ButtonProps> = ({
     className += " button-danger";
   }
 
-  // Apply size class
   if (size === "small") {
     className += " button-small";
   } else if (size === "large") {
     className += " button-large";
   }
 
-  // Apply custom button class
   if (button === "button_1") {
     className += " button_1";
   } else if (button === "button_2") {
@@ -61,7 +66,6 @@ const Button: React.FC<ButtonProps> = ({
     className += " button_3";
   }
 
-  // Apply custom styles
   const style: React.CSSProperties = {
     color,
     backgroundColor,
@@ -72,10 +76,23 @@ const Button: React.FC<ButtonProps> = ({
     fontSize,
     fontFamily,
     fontWeight,
+    transition,
   };
 
+  if (isHovered) {
+    style.backgroundColor = backgroundColorH; 
+    style.color = colorH; 
+  }
+
   return (
-    <button className={className} style={style} disabled={disabled} {...props}>
+    <button
+      className={className}
+      style={style}
+      disabled={disabled}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      {...props}
+    >
       {children}
     </button>
   );

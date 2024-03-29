@@ -35,6 +35,9 @@ const section_6 = () => {
               color="white"
               borderRadius="8px"
               backgroundColor="#DC7000"
+              backgroundColorH="rgb(95, 49, 0)"
+              colorH="whtie"
+              transition="background-color 0.3s ease"
             >
               Continue
             </Button>

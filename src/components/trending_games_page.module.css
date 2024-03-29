@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.trinding_games_body {
+  background-color: black;
+  width: 100%;
+  padding-block:10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_container {
+  width: 100%;
+  padding-inline: 10%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding: auto;
+  gap: 12.5%;
+}
+
+
+.upper_div_text {
+  padding: auto;
+  color: white;
+}
+
+.upper_div_button {
+  padding: auto;
+}
+
+
+.cards_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section_2_images {
+  width: 80%;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.section_2_card {
+  width: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.card_text h4 {
+  color: white;
+  padding-top: 20%;
+  font-size: 2vw;
+}
+
+
+.section_2_images:hover {
+  scale: 110%;
+  cursor: pointer;
+}

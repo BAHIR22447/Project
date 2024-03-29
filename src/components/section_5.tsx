@@ -6,7 +6,7 @@ import image_4 from "../assets/section_5_images_4.png";
 import image_5 from "../assets/section_5_image_5.png";
 import image_6 from "../assets/section_5_image_6.png";
 import Button from "./Button";
-import './button.css'
+import "./button.css";
 
 const Section_5 = () => {
   return (
@@ -46,6 +46,9 @@ const Section_5 = () => {
             backgroundColor="rgb(37, 30, 30)"
             color="white"
             borderRadius="8px"
+            backgroundColorH="rgb(17, 16, 16)"
+            colorH="whtie"
+            transition="background-color 0.3s ease"
           >
             SEE ALL
           </Button>
