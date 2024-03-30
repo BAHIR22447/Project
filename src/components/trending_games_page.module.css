@@ -7,7 +7,7 @@
 .trinding_games_body {
   background-color: black;
   width: 100%;
-  padding-block:10rem;
+  padding-block: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,6 @@
   gap: 12.5%;
 }
 
-
 .upper_div_text {
   padding: auto;
   color: white;
@@ -32,7 +31,6 @@
 .upper_div_button {
   padding: auto;
 }
-
 
 .cards_container {
   width: 100%;
@@ -63,8 +61,42 @@
   font-size: 2vw;
 }
 
-
 .section_2_images:hover {
   scale: 110%;
   cursor: pointer;
+}
+
+.game_details_overlay {
+  display: flex;
+  position: fixed;
+  width: 50vw;
+  height: 80%;
+  background-color: black;
+  color: white;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 8px;
+  left: 25%;
+  z-index: 9999;
+  bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_details_overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.game_details_overlay::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .game_details_overlay {
+    height: 50%;
+    top: 25%;
+    left: 12.5%;
+    width: 80%;
+  }
 }

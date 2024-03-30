@@ -42,16 +42,20 @@ const footer = () => {
           <p>+908 89097 890</p>
         </div>
         <div className="div_4">
-          <Link className="facebook" to={"#"}>
+          <Link
+            className="facebook"
+            to="https://www.facebook.com"
+            target="_blank"
+          >
             <FaFacebookF size={15} />
           </Link>
-          <Link className="instagram" to={"#"}>
+          <Link className="instagram" to="https://www.instagram.com" target="_blank">
             <RxInstagramLogo size={15} />
           </Link>
-          <Link className="twitter" to={"#"}>
+          <Link className="twitter" to="https://www.twitter.com" target="_blank">
             <FaTwitter size={15} />
           </Link>
-          <Link className="linked_in" to={"#"}>
+          <Link className="linked_in" to="https://www.linkedin.com" target="_blank">
             <FaLinkedinIn enableBackground={"white"} size={15} />
           </Link>
         </div>

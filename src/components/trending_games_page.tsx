@@ -17,7 +17,7 @@ const Trending_games_page = () => {
   return (
     <>
       {isOpen && (
-        <div className="game_details_overlay" onClick={() => setIsOpen(false)}>
+        <div className={styles.game_details_overlay} onClick={() => setIsOpen(false)}>
           <div className="game_details" onClick={(e) => e.stopPropagation()}>
             <button
               className="close-btn close_button_section_2"
