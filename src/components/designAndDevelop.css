@@ -142,3 +142,9 @@
   }
 }
 
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .back_drop_filter{
+    height: 800px;
+  }
+}

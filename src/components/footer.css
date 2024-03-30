@@ -48,7 +48,7 @@
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-  height: 28vh;
+  height: 28%;
   width: 8vw;
   justify-content: space-between;
   color: white;
@@ -63,7 +63,7 @@
 .div_3 {
   color: white;
   width: 20vw;
-  height: 28vh;
+  height: 28%;
   display: flex;
   justify-content: space-between;
   flex-flow: column;
@@ -85,7 +85,7 @@
   flex-flow: row;
   justify-content: space-around;
   width: 15vw;
-  height: 20vh;
+  height: 20%;
   align-items: end;
 }
 
@@ -103,10 +103,9 @@
   transition: 0.3s ease;
 }
 
-.div_2 a:hover{
+.div_2 a:hover {
   color: #fa9021;
 }
-
 
 .copyright {
   width: 100%;
@@ -149,5 +148,24 @@
 
   .div_1 p {
     font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .footer {
+    height: 400px;
+  }
+
+  .container_footer {
+    height: 340px;
+  }
+  .div_2 {
+    display: none;
+  }
+  .div_3 {
+    display: none;
+  }
+  .container_footer {
+    justify-content: space-around;
   }
 }

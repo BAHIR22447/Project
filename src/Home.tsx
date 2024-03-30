@@ -1,12 +1,11 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
-import Section_1 from "./components/Section_1";
-import Section_2 from "./components/Section_2";
+import Section_1 from "./components/3dGameDev";
+import Section_2 from "./components/CTG";
 import Section_3 from "./components/Section_3";
-import Section_4 from "./components/section_4";
-import Section_5 from "./components/section_5";
-import Section_6 from "./components/section_6";
-import Footer from './components/footer'
+import Section_4 from "./components/designAndDevelop";
+import Section_5 from "./components/ourProjects";
+import Section_6 from "./components/stayInLoop";
 // import Sidebar from "./components/sideBar";
 
 function Home() {
@@ -37,10 +36,6 @@ function Home() {
           <Section_6 />
         </div>
       </div>
-      <div className="footer_container">
-        <Footer />
-      </div>
-      <Outlet />
     </>
   );
 }

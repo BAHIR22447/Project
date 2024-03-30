@@ -1,4 +1,4 @@
-import "./section_4.css";
+import "./designAndDevelop.css";
 import { useState } from "react";
 import { CiMobile3 } from "react-icons/ci";
 import { BsPcDisplay } from "react-icons/bs";
@@ -7,20 +7,24 @@ import { GiVrHeadset } from "react-icons/gi";
 import { MdDesignServices } from "react-icons/md";
 import { TbHexagon3D } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Section_4 = () => {
   const [section4List, setSection_4_list] = useState([
     {
+      linkTO: "./designs",
       title: "Moblile Game Development",
       buttonIcon: <CiMobile3 className="icons_section_4" size={30} color="#FA9021" />,
       isPhone: false,
     },
     {
+      linkTO: "./designs",
       title: "PC Game Development",
       buttonIcon: <BsPcDisplay  className="icons_section_4" size={30} color="#FA9021" />,
       isPhone: false,
     },
     {
+      linkTO: "./designs",
       title: "PS4 Game Development",
       buttonIcon: (
         <SiPlaystation4 className="icons_section_4" size={30} color="#FA9021" />
@@ -28,16 +32,19 @@ const Section_4 = () => {
       isPhone: false,
     },
     {
+      linkTO: "./designs",
       title: "AR/VR Solution",
       buttonIcon: <GiVrHeadset className="icons_section_4" size={30} color="#FA9021" />,
       isPhone: false,
     },
     {
+      linkTO: "./designs",
       title: "AR/VR Design",
       buttonIcon: <MdDesignServices className="icons_section_4" size={30} color="#FA9021" />,
       isPhone: false,
     },
     {
+      linkTO: "./designs",
       title: "3D Modelings",
       buttonIcon: <TbHexagon3D className="icons_section_4" size={30} color="#FA9021" />,
       isPhone: false,
@@ -62,21 +69,23 @@ const Section_4 = () => {
           <div className="lower_div_section_4">
             {section4List.map((item, index) => {
               return (
-                <div key={index} className="lower_div_section_4_item">
-                  <a href="#" className="button_links">
-                    <div className="icon_container_section_4">
-                      <div className="lower_div_section_4_item_icon">
-                        {item.buttonIcon}
+                <Link to={item.linkTO}>
+                  <div key={index} className="lower_div_section_4_item">
+                    <a href="#" className="button_links">
+                      <div className="icon_container_section_4">
+                        <div className="lower_div_section_4_item_icon">
+                          {item.buttonIcon}
+                        </div>
                       </div>
-                    </div>
-                    <div className="lower_div_section_4_item_title">
-                      {item.title}
-                    </div>
-                    <div className="lower_div_section_4_item_button">
-                      <FaArrowRight color="#FA9021" />
-                    </div>
-                  </a>
-                </div>
+                      <div className="lower_div_section_4_item_title">
+                        {item.title}
+                      </div>
+                      <div className="lower_div_section_4_item_button">
+                        <FaArrowRight color="#FA9021" />
+                      </div>
+                    </a>
+                  </div>
+                </Link>
               );
             })}
           </div>

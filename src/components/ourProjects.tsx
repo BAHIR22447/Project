@@ -1,4 +1,4 @@
-import "../components/section_5.css";
+import "./ourProjects.css";
 import image_1 from "../assets/section_5_images_1.png";
 import image_2 from "../assets/section_5_image_2.png";
 import image_3 from "../assets/section_5_image_3.png";
@@ -6,6 +6,7 @@ import image_4 from "../assets/section_5_images_4.png";
 import image_5 from "../assets/section_5_image_5.png";
 import image_6 from "../assets/section_5_image_6.png";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 import "./button.css";
 
 const Section_5 = () => {
@@ -41,17 +42,19 @@ const Section_5 = () => {
         </div>
 
         <div className="button_see_all_section_5">
-          <Button
-            className="button_2 upper_div_button"
-            backgroundColor="rgb(37, 30, 30)"
-            color="white"
-            borderRadius="8px"
-            backgroundColorH="rgb(17, 16, 16)"
-            colorH="whtie"
-            transition="background-color 0.3s ease"
-          >
-            SEE ALL
-          </Button>
+          <Link to="/recentprojects">
+            <Button
+              className="button_2 upper_div_button"
+              backgroundColor="rgb(37, 30, 30)"
+              color="white"
+              borderRadius="8px"
+              backgroundColorH="rgb(17, 16, 16)"
+              colorH="whtie"
+              transition="background-color 0.3s ease"
+            >
+              SEE ALL
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

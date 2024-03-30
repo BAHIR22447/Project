@@ -93,10 +93,7 @@ html {
   background-color: black;
 }
 
-
 @media only screen and (max-width: 480px) {
-
-
   .section_1 {
     height: 350px;
   }
@@ -141,23 +138,37 @@ html {
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
   .main_3 {
-    height: 240vh;
+    height: 1500px;
   }
   .main {
     background-position-y: 10%;
-    height: 133vh;
+    height: 200vh;
   }
 
   .section_1 {
     height: 60vh;
   }
   .body {
-    height: 1800px;
+    height: 2150px;
   }
 
   .section_3 {
     height: 600px;
   }
 
+  .main_2 {
+    height: 800px;
+  }
+  
+  .section_5_container{
+    height: 1000px;
+  }
+  
+  .footer_container{
+    height: 475px;
+  }
 
+  .section_6_container{
+    height: 400px;
+  }
 }

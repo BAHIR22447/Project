@@ -1,4 +1,4 @@
-import "./section_6.css";
+import "./stayInLoop.css";
 import Button from "./Button";
 
 const section_6 = () => {

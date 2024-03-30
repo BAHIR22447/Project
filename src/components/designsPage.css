@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.designs_body{
+    background-color: black;
+    padding-top: 10%;
+}
+
+
+.coming_soon_designs{
+    text-align: center;
+    color: white;   
+}
+
+.error_designs{
+    width: 100%;
+    height: 100vh;
+}

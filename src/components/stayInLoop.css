@@ -116,4 +116,8 @@ input:focus {
   .lower_div_section_6_right {
     width: 80%;
   }
+
+  .section_6{
+    height: 400px;
+  }
 }

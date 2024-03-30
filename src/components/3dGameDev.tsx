@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import "./section_1.css";
+import "./3dGameDev.css";
 import unity from "../assets/unity 1.png";
 import unreal from "../assets/unreal 1.png";
 import cry from "../assets/cry 1.png";

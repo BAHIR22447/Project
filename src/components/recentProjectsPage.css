@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.recent_body{
+    background-color: black;
+    padding-top: 10%;
+}
+
+
+.coming_soon_recent{
+    text-align: center;
+    color: white;   
+}
+
+.error_recent{
+    width: 100%;
+    height: 100vh;
+
+}

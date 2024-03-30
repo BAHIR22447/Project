@@ -128,3 +128,9 @@
   
 
 }
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .section_5{
+    height: 1000px;
+  }
+}
